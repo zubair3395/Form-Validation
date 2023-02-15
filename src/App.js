@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import SchoolForm from './components/RegistertaionForm/SchoolForm';
+import UniversityForm from './components/RegistertaionForm/UniversityForm';
+import WorkExperience from './components/RegistertaionForm/WorkExperience';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="row w-100">
+      <div className="col">
+      <UniversityForm/>
+      </div>
+      <div className="col">
+        <SchoolForm/>
+      </div>
+      <div className="col">
+        <WorkExperience/>
+      </div>
     </div>
+      
+    </>
   );
 }
 
